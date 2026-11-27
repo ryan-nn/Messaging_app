@@ -52,4 +52,14 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
+
+    implementation("androidx.appcompat:appcompat:1.8.0")
+
+
+    implementation("androidx.fragment:fragment-ktx:1.9.1")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.10.2")
+    implementation("androidx.navigation:navigation-ui-ktx:2.10.2")
+
+
+    implementation("androidx.compose.material:material-icons-extended")
 }
