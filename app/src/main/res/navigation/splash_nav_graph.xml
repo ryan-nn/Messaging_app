@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.textapp.SplashFragment"
+        android:label="Welcome">
+        <action
+            android:id="@+id/action_splash_to_intro"
+            app:destination="@id/introFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.textapp.IntroFragment"
+        android:label="About Pulse">
+        <action
+            android:id="@+id/action_intro_to_ready"
+            app:destination="@id/readyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/readyFragment"
+        android:name="com.example.textapp.ReadyFragment"
+        android:label="Get started" />
+</navigation>
